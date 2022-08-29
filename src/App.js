@@ -1,23 +1,29 @@
-import logo from "./logo.svg";
+import {
+  Container,
+  Content1,
+  Content2,
+  Content3,
+  ContentBox,
+  Footer,
+  Main,
+  NavBar,
+  SideBar,
+} from "./globalStyles";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <NavBar>NavBar</NavBar>
+      <Main>Main</Main>
+      <SideBar>SideBar</SideBar>
+      <ContentBox>
+        <Content1>Content1</Content1>
+        <Content2>Content2</Content2>
+        <Content3>Content3</Content3>
+      </ContentBox>
+      <Footer>Footer</Footer>
+    </Container>
   );
 }
 
