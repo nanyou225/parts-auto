@@ -14,7 +14,7 @@ body{
 }
 `;
 
-export const Container = styled.div`
+export const ContainerGlobal = styled.div`
   display: grid;
   height: 100vh;
   grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr;
